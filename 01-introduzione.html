@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduzione - Zoom H5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/script.js" defer></script>
+<style>
+  .toc { background: var(--bg-card); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 1px solid var(--border); }
+  .toc h4 { margin-top: 0; color: var(--gold); }
+  .toc ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+  .toc li { margin-bottom: 8px; }
+  .toc a { color: var(--text); text-decoration: none; font-weight: 500; }
+  .toc a:hover { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<div class="global-nav">
+  <div class="global-nav-inner">
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="01-introduzione.html" class="active">🎤 Introduzione</a>
+    <a href="02-registrazione.html">🔴 Registrazione</a>
+    <a href="03-funzioni-avanzate.html">🎛️ Avanzate</a>
+    <a href="04-fotocamera.html">📷 Uso Fotocamera</a>
+    <a href="05-interfaccia-usb.html">💻 USB PC/Mac</a>
+    <a href="06-remoto.html">📱 App Remota</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <section id="intro" class="page-section">
+    <div class="sec-head"><span class="sec-num">01</span>
+      <div><h2>Introduzione e Setup Iniziale</h2><span class="sub">Prepara il tuo Zoom H5 all'azione</span></div>
+    </div>
+
+    <p class="lead">Lo Zoom H5 è un registratore multitraccia palmare diventato lo standard mondiale per videomaker e podcaster. Capire come è costruito fisicamente è il primo passo per non farsi prendere dal panico quando i led rossi iniziano a lampeggiare.</p>
+
+    <div class="toc">
+      <h4>Indice del Capitolo</h4>
+      <ul>
+        <li><a href="#anatomia">1. Anatomia Semplificata (Pulsanti e Rotelle)</a></li>
+        <li><a href="#alimentazione">2. Batterie, Alimentazione USB e Risparmio Energetico</a></li>
+        <li><a href="#sd">3. La Scheda SD: Inserimento e Formattazione Obbligatoria</a></li>
+        <li><a href="#menu">4. Navigazione Base del Menu</a></li>
+        <li><a href="#troubleshooting">5. Troubleshooting (Risoluzione Problemi Frequenti)</a></li>
+      </ul>
+    </div>
+
+    <h3 id="anatomia" style="margin-top:40px; color:var(--amber);">1. Anatomia Semplificata</h3>
+    <p>Guarda il frontale del tuo Zoom H5. Ti sembrerà un incrocio tra un walkie-talkie e un telecomando spaziale.</p>
+    
+    <div class="card neo">
+      <span class="badge neo">La scocca esterna</span>
+      <ul class="dots">
+        <li><strong>Capsula Superiore (X/Y):</strong> Quella palla metallica in alto con due microfoni incrociati. È "sganciabile"! Se premi i due tastini laterali, la puoi sfilare come l'obiettivo di una macchina fotografica per montarci sopra altri accessori Zoom (come microfoni a fucile direzionali).</li>
+        <li><strong>Rotelle Analogiche (Gain 1 e 2):</strong> Quelle due grosse manopole coperte da una barra di ferro (per evitare di urtarle per sbaglio). Controllano il "Volume in Ingresso" (Gain). Se le alzi, il registratore diventa più sensibile e sente anche un respiro. Se le abbassi, diventa sordo.</li>
+        <li><strong>I Pulsanti "L", "R", "1", "2":</strong> Sono gli interruttori della corrente (Tracce). Se premi "L" e "R", si illuminano di rosso e stai attivando la capsula superiore a croce. Se premi "1" o "2", attivi gli ingressi grossi sul fondo (dove infili i cavi dei microfoni da studio). <em>Puoi attivarli tutti assieme per registrare 4 tracce contemporaneamente!</em></li>
+        <li><strong>Tasti Laterali:</strong> Sul lato destro c'è l'interruttore a molla per accendere la macchina (tieni premuto in giù per 2 secondi) e la levetta "Menu". Sul lato sinistro c'è il buco per le cuffie, essenziale per sentire cosa stai registrando!</li>
+      </ul>
+    </div>
+
+    <h3 id="alimentazione" style="margin-top:40px; color:var(--crimson);">2. Batterie, Alimentazione USB e Risparmio</h3>
+    <p>Il terrore di ogni tecnico audio è che il registratore si spenga nel bel mezzo di un'intervista pazzesca.</p>
+    
+    <div class="card amber">
+      <span class="badge inter">Gestione dell'energia</span>
+      <ul class="dots">
+        <li><strong>Le Pile AA:</strong> Lo Zoom funziona con due semplici pile Stilo (AA). Durano circa 15 ore in registrazione continua. <em>Consiglio pro:</em> usa pile Ricaricabili Eneloop Pro (nere). Nel menu, vai in <span class="km">SYSTEM ➔ Battery Type</span> e seleziona "Ni-MH" se usi le ricaricabili, o "Alkaline" se usi le usa e getta del supermercato. Dire al software che pile usi gli permette di darti un calcolo esatto della percentuale residua, salvandoti da spegnimenti a sorpresa!</li>
+        <li><strong>Alimentazione Infinita (USB):</strong> Sul lato c'è una porta USB. Se colleghi un Powerbank da cellulare, lo Zoom prenderà energia da lì ignorando le pile interne! Fantastico per conferenze di 8 ore.</li>
+      </ul>
+    </div>
+
+    <h3 id="sd" style="margin-top:40px; color:var(--teal);">3. La Scheda SD: Inserimento e Formattazione</h3>
+    <p>L'audio pesa pochissimo rispetto ai video. Una scheda SD (formato grande, non micro-sd) da 32GB può registrare decine di ore.</p>
+    
+    <div class="dd">
+      <div class="col do">
+        <h5>✅ La regola della Formattazione interna</h5>
+        <p>Non inserire mai una scheda SD nuova presa direttamente dalla scatola o da un computer per iniziare a registrare. Lo Zoom usa una sua lingua e cartelle specifiche.
+        <br><br><strong>Passaggi:</strong> Inserisci la SD. Accendi l'H5. Clicca il tastino <strong>MENU</strong> (lato destro). Con la rotellina scendi fino a <strong>SD CARD</strong> e premi la rotella per entrare. Scegli <strong>FORMAT</strong> e poi <strong>YES</strong>. L'H5 pulirà la memoria e creerà al suo interno tre cartelle (Folder 01, Folder 02, Folder 03) dove andrà a salvare i tuoi file in ordine. Da questo momento, è sicura e pronta!</p>
+      </div>
+    </div>
+
+    <h3 id="menu" style="margin-top:40px; color:var(--gold);">4. Navigazione Base del Menu</h3>
+    <p>La levetta laterale del menu è geniale ma inizialmente strana.</p>
+
+    <div class="card neo">
+      <span class="badge all">Come muoversi</span>
+      <p class="desc">Dimentica i touch screen. Lo Zoom si usa spesso al buio nei teatri.</p>
+      <ul class="dots">
+        <li><strong>Entrare/Uscire:</strong> Premi fisicamente in dentro il bottone "MENU" (quello sotto l'accensione). Per <em>tornare indietro</em> (Back), premi di nuovo lo stesso bottone.</li>
+        <li><strong>Scorrere/Accettare:</strong> Sotto al tasto Menu c'è una levetta sporgente (Jog Dial). Spingila su e giù per scorrere la lista. Quando trovi la voce che ti interessa (es. "REC"), premi la levetta dritta verso l'interno, come se fosse il clic di un mouse, per confermare ("Enter").</li>
+      </ul>
+    </div>
+
+    <h3 id="troubleshooting" style="margin-top:40px; color:var(--ink);">5. Troubleshooting (Risoluzione Problemi Estesa)</h3>
+    <div class="dd">
+      <div class="col dont">
+        <h5>❓ 1. Lo schermo si spegne dopo 15 secondi ma sento che sta registrando! Si è rotto?</h5>
+        <p><strong>Causa:</strong> Non si è rotto. È una funzione di risparmio batteria predefinita.</p>
+        <p><strong>Soluzione:</strong> Vai nel <span class="km">MENU ➔ SYSTEM ➔ Backlight</span>. Se lo imposti su "15 sec", la luce si spegne per salvare energia. Se lo metti su "ON", la retroilluminazione resterà accesa per sempre (utile al buio ma consuma di più).</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 2. Premo il tasto REC grosso ma non registra nulla e il counter resta a 00:00:00!</h5>
+        <p><strong>Causa:</strong> Non hai "Armato" nessuna traccia. Lo Zoom non sa *chi* deve ascoltare.</p>
+        <p><strong>Soluzione:</strong> Guarda i 4 tastini trasparenti sotto lo schermo (L, R, 1, 2). Se sono tutti spenti, la macchina è in folle. Premi i tasti L e R: diventeranno Rossi. Ora hai armato il microfono in alto. Se premi REC, la registrazione partirà!</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 3. Dice "SD Card Error" o "No Card" e non mi fa fare nulla!</h5>
+        <p><strong>Causa:</strong> La levetta Lock della scheda SD è bloccata, oppure stai usando una scheda SD di marca strana/troppo grossa (lo Zoom H5 supporta massimo schede SDHC da 32GB. Se infili una SDXC da 128GB o 256GB moderna, spesso va in errore!).</p>
+        <p><strong>Soluzione:</strong> Compra una classica e robusta scheda SD da 32GB (es. SanDisk Extreme), togli il Lock laterale plastico, inseriscila e formattala come spiegato al punto 3.</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<button id="themeBtn" aria-label="Cambia tema">
+  <div class="swatch"></div>
+  <span class="lbl-name">Tema</span>
+</button>
+
+</body>
+</html>

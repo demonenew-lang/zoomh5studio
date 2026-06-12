@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registrazione Base - Zoom H5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/script.js" defer></script>
+<style>
+  .toc { background: var(--bg-card); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 1px solid var(--border); }
+  .toc h4 { margin-top: 0; color: var(--gold); }
+  .toc ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+  .toc li { margin-bottom: 8px; }
+  .toc a { color: var(--text); text-decoration: none; font-weight: 500; }
+  .toc a:hover { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<div class="global-nav">
+  <div class="global-nav-inner">
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="01-introduzione.html">🎤 Introduzione</a>
+    <a href="02-registrazione.html" class="active">🔴 Registrazione</a>
+    <a href="03-funzioni-avanzate.html">🎛️ Avanzate</a>
+    <a href="04-fotocamera.html">📷 Uso Fotocamera</a>
+    <a href="05-interfaccia-usb.html">💻 USB PC/Mac</a>
+    <a href="06-remoto.html">📱 App Remota</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <section id="registrazione" class="page-section">
+    <div class="sec-head"><span class="sec-num">02</span>
+      <div><h2>Registrazione Base</h2><span class="sub">Decibel, Formati Audio e la Capsula XY</span></div>
+    </div>
+
+    <p class="lead">Se non sai leggere i "numeretti" sullo schermo, il tuo audio rischia di essere inascoltabile. Impareremo la regola d'oro del -12dB e capiremo in quale lingua salvare i file (WAV vs MP3) per non rovinare mai il tuo capolavoro.</p>
+
+    <div class="toc">
+      <h4>Indice del Capitolo</h4>
+      <ul>
+        <li><a href="#decibel">1. La regola del -12dB e il Gain (Non bruciare l'audio)</a></li>
+        <li><a href="#formati">2. Scegliere il Formato: WAV 24-bit vs MP3</a></li>
+        <li><a href="#xy">3. Capire la Capsula Stereo XY (Come ascoltano gli umani)</a></li>
+        <li><a href="#multi">4. Modalità Stereo vs Multi-File</a></li>
+        <li><a href="#troubleshooting">5. Troubleshooting (Risoluzione Problemi Frequenti)</a></li>
+      </ul>
+    </div>
+
+    <h3 id="decibel" style="margin-top:40px; color:var(--teal);">1. La regola del -12dB e il Gain</h3>
+    <p>In fotografia, se scatti una foto troppo chiara (bruciata), il cielo diventa bianco e i dettagli si perdono. Nell'audio è lo stesso: se registri troppo forte, il suono "Clippa" (distorce), gratta e diventa orrendo (ed è irrecuperabile!).</p>
+
+    <div class="card neo">
+      <span class="badge inter">Gestire il Volume (Gain)</span>
+      <p class="desc">Sullo schermo LCD, mentre parli, vedi due barre nere che si muovono verso destra. I numeri partono da numeri bassissimi a sinistra (es. -40) e arrivano allo 0 (Zero) a destra.</p>
+      <ul class="dots">
+        <li><strong>Lo ZERO è la morte:</strong> Nell'audio digitale, lo Zero è il muro di cemento. Se la voce sbatte contro lo zero (0 dB), il file si rompe, distorce e frigge.</li>
+        <li><strong>La regola d'oro (-12dB):</strong> Ruota le manopole frontali finché, quando il soggetto parla normalmente, la barra nera "balla" comodamente intorno al numero <strong>-12</strong>. Perché non a -6? Perché se improvvisamente il soggetto ride forte o urla, il volume balzerà a destra. Se eri a -12, balzerà a -3 e sarai salvo. Se eri già a -6, sfonderà lo Zero e rovinerà il video! Lascia spazio ("Headroom").</li>
+      </ul>
+    </div>
+
+    <h3 id="formati" style="margin-top:40px; color:var(--crimson);">2. Scegliere il Formato: WAV 24-bit vs MP3</h3>
+    <p>Lo Zoom H5 può registrare in due formati. Selezionarli dal menu è vitale a seconda del tuo lavoro.</p>
+
+    <div class="card amber">
+      <span class="badge neo">La fedeltà della macchina</span>
+      <table class="tbl">
+        <thead><tr><th>Formato</th><th>(Spiegazione Facile) Come funziona</th><th>Quando usarlo?</th></tr></thead>
+        <tbody>
+          <tr><td><strong>WAV (24-bit / 48kHz)</strong></td><td>È come una foto in formato RAW. Cattura un'enormità di sfumature, sfondi e silenzi puri senza tagliare nessuna frequenza. Il file pesa tanto.</td><td><strong>Sempre per il Cinema.</strong> Se devi registrare la voce per un film, un cortometraggio o un podcast professionale da montare su Premiere, scegli questo. Mai accontentarsi di meno.</td></tr>
+          <tr><td><strong>MP3 (320kbps o 128kbps)</strong></td><td>È come una foto in JPG compressa. Il registratore, mentre salva, "butta via" suoni che l'orecchio umano fa fatica a sentire, rimpicciolendo il file di 10 volte!</td><td><strong>Per prendere appunti vocali.</strong> O per registrare lunghe lezioni universitarie di 5 ore dove la voce e basta è essenziale e lo spazio su SD scarseggia.</td></tr>
+        </tbody>
+      </table>
+      <div class="callout info"><span class="ic">🎬</span><div><b>Il 48kHz:</b> Nelle opzioni WAV, scegli sempre "48kHz". È lo standard mondiale matematico per il Video. (Se scegli 44.1kHz, che è per i CD Musicali, dopo 10 minuti di video l'audio andrà fuori sincrono dal labiale dell'attore!).</div></div>
+    </div>
+
+    <h3 id="xy" style="margin-top:40px; color:var(--ink);">3. Capire la Capsula Stereo XY</h3>
+    <p>Quella capsula metallica a palla in dotazione è miracolosa. Contiene due microfoni incrociati a 90° (Uno guarda a destra, uno a sinistra). Questa tecnica si chiama "XY".</p>
+
+    <div class="dd">
+      <div class="col do">
+        <h5>✅ Ricreare l'Orecchio Umano</h5>
+        <p>A cosa serve incrociarli in quel modo? Crea un'immagine "Stereo" super realistica. Se un'auto passa da sinistra a destra davanti al registratore, la tua capsula la registrerà perfettamente, e quando chiunque ascolterà con le cuffiette a casa, sentirà il motore spostarsi dal suo orecchio sinistro a quello destro in modo tridimensionale! È perfetta per registrare band musicali, cori, o la natura viva (Boschi, pioggia). <em>Non usarla per le interviste a una singola persona (meglio un Lavalier)</em>.</p>
+      </div>
+    </div>
+
+    <h3 id="multi" style="margin-top:40px; color:var(--amber);">4. Modalità Stereo vs Multi-File (Multitraccia)</h3>
+    <p>Lo Zoom H5 ha due cervelli. All'accensione, di default, è in modalità "Stereo File" o "Multi File".</p>
+
+    <ul class="dots">
+      <li><strong>Stereo File Mode (Mixaggio Unito):</strong> Se premi i tasti (L, R) e anche quelli del fondo (1, 2) e hai attaccato 3 microfoni... lo Zoom fonderà tutte e 3 le voci in un SINGOLO file WAV. Risultato? Se il tipo al microfono 1 tossisce e il tipo al microfono 2 parla... non potrai più isolarli al computer, perché sono mescolati per sempre. (Ottimo solo se vai di fretta e pubblichi diretto).</li>
+      <li><strong>Multi File Mode (Separazione Divina):</strong> Vai in <span class="km">MENU ➔ REC MODE ➔ Multi File</span>. MIRACOLO! Ora, quando clicchi registra, sulla tua scheda SD verranno creati due o tre file WAV completamente slegati! Al computer, metterai la voce di Mario in una riga, e la voce di Luigi nell'altra riga, potendo abbassare il volume di Mario senza intaccare la registrazione di Luigi! Regola aurea: <em>lavora sempre in Multi File Mode!</em></li>
+    </ul>
+
+    <h3 id="troubleshooting" style="margin-top:40px; color:var(--ink);">5. Troubleshooting (Risoluzione Problemi Frequenti)</h3>
+    <div class="dd">
+      <div class="col dont">
+        <h5>❓ 1. Ho importato l'audio in Premiere, ma l'audio del mio amico si sente SOLO nella cassa sinistra del PC e non nella destra!</h5>
+        <p><strong>Causa:</strong> Lo hai collegato all'ingresso "1" (che corrisponde all'orecchio Sinistro per il formato Stereo Base) e non hai diviso le tracce. Premiere pensa che tu voglia che lui parli a sinistra.</p>
+        <p><strong>Soluzione:</strong> In Premiere, clicca col destro sul file audio -> "Modify" -> "Audio Channels" e cambia "Stereo" in "Mono". Ora Premiere piazzerà la sua singola voce perfettamente centrata in entrambe le casse (Destra e Sinistra) colmando il buco!</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 2. Quando uso la manopola grande per alzare il Gain 1 e 2 in contemporanea, una manopola va dura e girano entrambe assieme, è difettoso?</h5>
+        <p><strong>Causa:</strong> No, le manopole non sono difettose, sei in modalità "Link".</p>
+        <p><strong>Soluzione:</strong> Nel menu c'è la funzione "In 1/2 Link". Serve per "fondere" elettronicamente e meccanicamente i due ingressi, affinché ruotandone uno si alzi il volume di entrambi allo stesso modo matematico perfetto (Ideale per tastiere elettroniche stereo). Se usi microfoni diversi, vai nel Menu e metti In 1/2 Link su OFF. Torneranno indipendenti.</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 3. Sullo schermo, un ingresso è acceso e rosso, e l'altro continua a lampeggiare rosso intermittente, perché?</h5>
+        <p><strong>Causa:</strong> Lampeggiante in rosso è il segnale disperato dello Zoom: "Il suono è Muto, la traccia non riceve nulla oppure si sta per sganciare!".</p>
+        <p><strong>Soluzione:</strong> Controlla che il cavo del microfono (sotto) sia infilato Fino in fondo e abbia fatto il "Click" meccanico. Spesso, per paura di rompere, si lasciano i cavi Canon XLR a metà corsa, e la connessione in metallo non trasmette corrente.</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<button id="themeBtn" aria-label="Cambia tema">
+  <div class="swatch"></div>
+  <span class="lbl-name">Tema</span>
+</button>
+
+</body>
+</html>

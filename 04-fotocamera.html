@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integrazione Fotocamera - Zoom H5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/script.js" defer></script>
+<style>
+  .toc { background: var(--bg-card); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 1px solid var(--border); }
+  .toc h4 { margin-top: 0; color: var(--gold); }
+  .toc ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+  .toc li { margin-bottom: 8px; }
+  .toc a { color: var(--text); text-decoration: none; font-weight: 500; }
+  .toc a:hover { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<div class="global-nav">
+  <div class="global-nav-inner">
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="01-introduzione.html">🎤 Introduzione</a>
+    <a href="02-registrazione.html">🔴 Registrazione</a>
+    <a href="03-funzioni-avanzate.html">🎛️ Avanzate</a>
+    <a href="04-fotocamera.html" class="active">📷 Uso Fotocamera</a>
+    <a href="05-interfaccia-usb.html">💻 USB PC/Mac</a>
+    <a href="06-remoto.html">📱 App Remota</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <section id="fotocamera" class="page-section">
+    <div class="sec-head"><span class="sec-num">04</span>
+      <div><h2>Integrazione con Fotocamera (G9)</h2><span class="sub">Lo Scenario da Videomaker: Sincronizzazione Totale</span></div>
+    </div>
+
+    <p class="lead">Montare i video sincronizzando l'audio a mano "battendo le mani" è noioso. L'obbiettivo di questo capitolo è fare in modo che l'audio purissimo dei microfoni dello Zoom entri DIRETTO nel file video della tua Panasonic G9 per darti un file `.MP4` già pronto e fuso. Ma i voltaggi elettrici tra microfoni e macchine fotografiche sono molto delicati: un errore e fiammi tutto il girato.</p>
+
+    <div class="toc">
+      <h4>Indice del Capitolo</h4>
+      <ul>
+        <li><a href="#montaggio">1. Montaggio Fisico e l'Adattatore Hot-Shoe</a></li>
+        <li><a href="#cavo">2. Quale cavo usare (Line Out)</a></li>
+        <li><a href="#menu_g9">3. Preparare la G9 (Rendere la fotocamera Sorda)</a></li>
+        <li><a href="#calibrazione">4. Il Bilanciamento Esatto (Il Vol laterale dello Zoom)</a></li>
+        <li><a href="#troubleshooting">5. Troubleshooting (Risoluzione Problemi Frequenti)</a></li>
+      </ul>
+    </div>
+
+    <h3 id="montaggio" style="margin-top:40px; color:var(--amber);">1. Montaggio Fisico e l'Adattatore Hot-Shoe</h3>
+    <p>Non tenere il registratore a penzoloni, devi attaccarlo sopra la fotocamera in modo solido così che l'operatore video possa avere una macchina da presa tipo "Run&Gun".</p>
+
+    <div class="card neo">
+      <span class="badge inter">Fissare lo Zoom</span>
+      <p class="desc">Ti serve un "Hot Shoe Mount", un piccolo adattatore di metallo (spesso venduto insieme allo Zoom o a 10 euro su Amazon).</p>
+      <ul class="dots">
+        <li><strong>Sulla G9:</strong> Infila la base quadrata dell'adattatore nella slitta metallica superiore della fotocamera (dove di solito va il flash). Stringi la rotellina inferiore verso il basso finché si fissa al ferro.</li>
+        <li><strong>Sullo Zoom:</strong> Capovolgilo. Al centro della pancia dello Zoom c'è un grosso foro filettato da treppiede (1/4"). Avvita il fondo dello Zoom sulla vite in cima all'adattatore. <em>Importante: per non far ruotare lo zoom su se stesso a destra e a manca, alza l'ultima rondellina zigrinata in alto finché non va a scontrarsi e bloccarsi col fondo di plastica del registratore, funzionando da freno!</em></li>
+      </ul>
+    </div>
+
+    <h3 id="cavo" style="margin-top:40px; color:var(--teal);">2. Quale cavo usare e dove infilarlo (Attenzione ai fori)</h3>
+    <p>La fotocamera non capisce il linguaggio "Digitale" senza un cavo fisico stereo. Usa un Cavo Jack Audio TRS maschio/maschio 3.5mm (Il cavo "cuffie" normale con gli spinotti in ferro dorato che hanno due righine nere sulla punta).</p>
+
+    <div class="dd">
+      <div class="col do">
+        <h5>✅ Dove inserirlo (Il Segreto di Line-Out)</h5>
+        <p><strong>Lato Zoom H5:</strong> Sul lato sinistro dell'H5 ci sono due fori identici per le cuffie. Uno ha il simbolo delle Cuffie, l'altro si chiama <strong>LINE OUT</strong> (Uscita di Linea). IGNORA LE CUFFIE! L'uscita Cuffie spara corrente che pompa i bassi e distorce. Infila lo spinotto dentro <em>LINE OUT</em>. È un foro elettricamente puro che manderà l'audio neutro verso la G9.
+        <br><br><strong>Lato G9:</strong> Sul lato sinistro della fotocamera, apri lo sportellino in alto rosso: l'ingresso <strong>MIC In</strong>. Infila forte lì. Non metterlo in quello sotto "Cuffie" altrimenti non accadrà nulla!</p>
+      </div>
+    </div>
+
+    <h3 id="menu_g9" style="margin-top:40px; color:var(--crimson);">3. Preparare la G9 (Renderla "Sorda")</h3>
+    <p>I preamplificatori (Amplificatori elettrici del suono) dentro le fotocamere da 1000 euro sono scarsi, fatti di chip da 2 euro, e creano rumore bianco, fruscii (hiss) e distorsioni da soli. Non vogliamo usarli! Vogliamo usare i super chip preamplificatori da 300 euro dello Zoom.</p>
+
+    <div class="card amber">
+      <span class="badge pro">La regola chirurgica della G9</span>
+      <ol class="steps">
+        <li><strong>Spegnere il rumore della G9:</strong> Accendi la G9, premi MENU -> Icona Cinepresa (Video) -> Sottomenu col Microfono. Vai su <span class="km">Reg. Livello Mic.</span> Mettilo in <em>MANUALE</em> e usa il dito per scendere fin giù, abbassando la manovella elettronica al minimo spaccato: <strong>-12dB</strong>. Così la G9 diventerà quasi sorda, e spegnerà i suoi rumori bianchi orribili.</li>
+        <li><strong>Spegnere gli automatismi stupidi della G9:</strong> Vai su <span class="km">Limitatore Audio (Limiter)</span> -> <em>OFF</em>. Abbiamo il Limiter geniale dello Zoom, non vogliamo che due intelligenze artificiali facciano a botte rovinando la traccia. E metti anche <em>Riduzione Rumore Vento</em> su OFF (Se c'è vento, userai il filtro Low-Cut dello Zoom, che è mille volte superiore a quello della G9).</li>
+      </ol>
+    </div>
+
+    <h3 id="calibrazione" style="margin-top:40px; color:var(--ink);">4. Il Bilanciamento Esatto (Il VOL laterale dello Zoom)</h3>
+    <p>A questo punto hai una videocamera quasi sorda. Se parli nei microfoni dello Zoom, il video finale non avrà quasi audio. Ora dobbiamo pompare un torrente di "Puro segnale audio pulito" dallo Zoom dentro la G9 sorda. Lo chiamiamo il "Calcio di Rinvio".</p>
+
+    <ul class="dots">
+      <li>Sul lato sinistro dell'H5 (di fianco al buco Line Out) c'è una misteriosa rotellina microscopica piatta, simile a quella del volume dei vecchi gameboy, marchiata "VOL". Lei regola *solo* l'onda anomala che viaggia verso la telecamera!</li>
+      <li>Con una mano, parla (e regola il livello generale a -12dB come studiato nel capitolo 2 per far muovere il cursore nero principale del registratore).</li>
+      <li>Con l'altra mano, ruota la rotellina "VOL" piatta di lato per inviare il colpo alla G9. Spingila indicativamente sul "7" o sull'"8".</li>
+      <li>Guarda lo schermo della Panasonic G9: in basso ha due barrette verdi del livello del microfono. Parla forte e controlla che le barrette della G9 ondeggino in un livello sicuro verde e giallo ma <strong>Senza Sforare mai fino al bordo di destra</strong> (rosso limite). Se sforano e "sbattono", abbassa la minuscola rotellina VOL laterale del registratore per diminuire la pressione dell'acqua inviata alla videocamera. Hai appena creato la fusione del secolo! Il suono della Panasonic ora sarà da Oscàr!</li>
+    </ul>
+
+    <h3 id="troubleshooting" style="margin-top:40px; color:var(--ink);">5. Troubleshooting Esteso (Risoluzione Problemi Frequenti)</h3>
+    <div class="dd">
+      <div class="col dont">
+        <h5>❓ 1. Ho fatto tutto perfettamente, lo schermo dello Zoom sbatte a -12 pulito, ma l'audio dentro la mia fotocamera G9 frigge ed è esploso ed è inascoltabile.</h5>
+        <p><strong>Causa:</strong> L'errore da novellino più comune. Hai scambiato i due buchi! Hai infilato il cavo nell'uscita <em>CUFFIE (Cuffietta/Headphone)</em> dello Zoom invece che nella <em>LINE OUT</em>. La porta cuffie è un buco "amplificato" pieno di mostruosa corrente progettata per muovere i fischi in metallo degli altoparlanti delle cuffie (non per viaggiare nei cavi sensibili). Hai sparato "un fulmine" dentro il processore della fotocamera!</p>
+        <p><strong>Soluzione:</strong> Spegni subito per non rovinare il chip della Panasonic G9. Sposta il cavo nel buco più in alto con scritto Line Out e riprova.</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 2. Nel video sento un sibilo radiofonico continuo (bzzzz) fastidiosissimo che non riesco a togliere. L'ambiente in realtà è silenzioso.</h5>
+        <p><strong>Causa:</strong> Cavo TRS schifoso. Stai usando un cavetto comprato dai cinesi a 1 euro. I cavi cinesi non hanno "Schermatura Elettromagnetica" nel filo interno. L'elettronica enorme della fotocamera Panasonic e l'antenna Wi-Fi stanno emettendo campi magnetici che si scontrano con il filo non isolato fungendo da Antenna per i disturbi!</p>
+        <p><strong>Soluzione:</strong> Compra un cavo audio 3.5mm marchiato "Rode SC2" o marchiato Hosa, specificando "cavo schermato o placcato oro". Costano dai 10 ai 15 euro. Non risparmiare sul collo di bottiglia del tuo setup milionario!</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 3. Vorrei usare un vecchio microfono "Senza Fili" (Radiomicrofono) ma dove lo collego allo Zoom per mandarlo alla Panasonic?</h5>
+        <p><strong>Causa:</strong> I ricevitori Wireless moderni (Rode Wireless Go, DJI Mic) hanno un'uscita TRS (jack classico 3.5).</p>
+        <p><strong>Soluzione:</strong> Lo Zoom H5 ha un "buchetto" segreto fantastico. Guarda la capsula argentea a palla (L/R) superiore. Sul fianco di quella capsula svitabile, vedrai un forellino piccolo per spinotti 3.5mm: "EXT IN". Infila lì il ricevitore wireless. <em>Magia:</em> non appena infili lo spinotto, lo Zoom "Spegnerà" immediatamente i microfoni della palla fisica d'argento e re-indirizzerà tutto lo spazio al tuo ricevitore Wireless pulitissimo a lunga distanza, e poi sparerà quel risultato dentro la Panasonic! Un vero setup modulare!</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<button id="themeBtn" aria-label="Cambia tema">
+  <div class="swatch"></div>
+  <span class="lbl-name">Tema</span>
+</button>
+
+</body>
+</html>

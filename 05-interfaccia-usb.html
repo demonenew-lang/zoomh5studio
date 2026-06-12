@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interfaccia USB PC/Mac - Zoom H5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/script.js" defer></script>
+<style>
+  .toc { background: var(--bg-card); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 1px solid var(--border); }
+  .toc h4 { margin-top: 0; color: var(--gold); }
+  .toc ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+  .toc li { margin-bottom: 8px; }
+  .toc a { color: var(--text); text-decoration: none; font-weight: 500; }
+  .toc a:hover { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<div class="global-nav">
+  <div class="global-nav-inner">
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="01-introduzione.html">🎤 Introduzione</a>
+    <a href="02-registrazione.html">🔴 Registrazione</a>
+    <a href="03-funzioni-avanzate.html">🎛️ Avanzate</a>
+    <a href="04-fotocamera.html">📷 Uso Fotocamera</a>
+    <a href="05-interfaccia-usb.html" class="active">💻 USB PC/Mac</a>
+    <a href="06-remoto.html">📱 App Remota</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <section id="usb" class="page-section">
+    <div class="sec-head"><span class="sec-num">05</span>
+      <div><h2>Interfaccia Audio USB</h2><span class="sub">Dal Registratore Palmare allo Studio Podcast per PC</span></div>
+    </div>
+
+    <p class="lead">Le vere "Schede Audio" per PC da studio (Focusrite, Apollo) costano centinaia di euro. Ebbene, tu ne possiedi già una senza saperlo. Lo Zoom H5 possiede una modalità "Mutante" capace di farsi riconoscere dal PC e fare dirette YouTube senza ritardi!</p>
+
+    <div class="toc">
+      <h4>Indice del Capitolo</h4>
+      <ul>
+        <li><a href="#connessione">1. La Connessione e il Menu USB (Stereo vs Multi-Track)</a></li>
+        <li><a href="#driver">2. PC Windows vs Mac: Questione di Driver ASIO</a></li>
+        <li><a href="#loopback">3. Registrare su OBS e la magia del "Loopback"</a></li>
+        <li><a href="#troubleshooting">4. Troubleshooting (Risoluzione Problemi Frequenti)</a></li>
+      </ul>
+    </div>
+
+    <h3 id="connessione" style="margin-top:40px; color:var(--teal);">1. La Connessione e il Menu USB</h3>
+    <p>Non devi usare la scheda SD, non devi copiare e incollare file. Registreremo "Direttamente dentro l'hard disk del computer".</p>
+
+    <div class="card neo">
+      <span class="badge inter">Avviare la Trasformazione</span>
+      <ol class="steps">
+        <li>Collega lo Zoom H5 (Da spento o acceso, non importa) a una porta USB del tuo computer con un cavo Mini-USB.</li>
+        <li>La macchina si accorgerà del cavo. Sullo schermo dell'H5 apparirà un menu. Seleziona <span class="km">Audio Interface</span>. (Se invece scegliessi "Mass Storage", il pc lo tratterebbe come una stupida chiavetta USB per spostare i file dalla schedina).</li>
+        <li>Ora arriva la scelta letale (Il Bivio):
+          <br><strong>STEREO:</strong> Selezionalo se farai una diretta Skype, Zoom Meeting, Discord o se non sai usare i software musicali. L'H5 prenderà TUTTI i microfoni che hai attaccato, li frullerà assieme in un unico suono fuso stereo e li manderà al PC. È la via sicura per gli streamer pigri.
+          <br><strong>MULTI TRACK (Multitraccia):</strong> Selezionalo per roba seria. Manda le tracce al PC come 4 "Autostrade separate e isolate" non mescolate. In programmi professionali (Audacity, Reaper) potrai dire "Usa il Microfono 1 per me, e il Microfono 2 per l'ospite", separandoli magicamente anche se sono tutti in diretta USB!
+        </li>
+        <li>Ti chiederà l'alimentazione (PC/Mac o Battery). Scegli <em>PC/Mac</em>, l'H5 "succhierà" l'elettricità dalla spina del tuo pc, non scaricando le proprie batterie interne! (Una goduria).</li>
+      </ol>
+    </div>
+
+    <h3 id="driver" style="margin-top:40px; color:var(--amber);">2. PC Windows vs Mac: Driver ASIO</h3>
+    <p>Selezionata la modalità, passiamo ai computer veri e propri.</p>
+    
+    <ul class="dots">
+      <li><strong>Su Mac:</strong> Non devi fare letteralmente nulla. Apple ha le fondamenta audio "CoreAudio" potentissime. Inserisci, vai nelle preferenze audio del Mac, clicchi H5, ed è pronto per registrare a Hollywood.</li>
+      <li><strong>Su Windows PC:</strong> Se lo colleghi e basta, Windows userà driver generici cinesi. Il suono arriverà in ritardo di 1 secondo (Latenza Insopportabile). <strong>DEVI</strong> andare sul sito zoomcorp.com e scaricare (Gratis) gli "Zoom H Series ASIO Driver" per Windows! I driver ASIO bypassano i suoni sciocchi di windows e creano un tunnel "a zero ostacoli" ad altissima velocità tra lo Zoom e il tuo programma, azzerando il ritardo (latenza).</li>
+    </ul>
+
+    <h3 id="loopback" style="margin-top:40px; color:var(--gold);">3. Registrare su OBS e il Loopback</h3>
+    <p>Vuoi fare lo YouTuber in diretta Twitch e contemporaneamente mandare la base musicale e la tua voce? L'H5 ha una scheda tecnica spaventosa chiamata Loopback (che normalmente sulle altre schede costa molto cara).</p>
+
+    <div class="dd">
+      <div class="col do">
+        <h5>✅ L'Anello dell'Audio Continuo</h5>
+        <p>Attivando il <strong>Loopback</strong> nello schermo dello Zoom (Mentre è collegato in modalità USB Stereo), accade una magia stregonesca.
+        <br><br>Lo Zoom raccoglie la tua voce dal microfono... <em>ma raccoglie anche il suono della musica di Spotify o dei video Youtube che stanno andando nel tuo PC in quel momento!</em> Mescola fisicamente questi due suoni assieme nel suo cervellone e "rimanda" il blocco unico indietro al software OBS Studio del computer pronto per Twitch! In questo modo i tuoi follower sentiranno sia te che il videogioco senza complicati cablaggi virtuali noiosi. Un'arma formidabile per lo streaming.</p>
+      </div>
+    </div>
+
+    <h3 id="troubleshooting" style="margin-top:40px; color:var(--ink);">4. Troubleshooting Esteso (Risoluzione Problemi Frequenti)</h3>
+    <div class="dd">
+      <div class="col dont">
+        <h5>❓ 1. Ho attaccato le cuffie al PC per ascoltare me stesso durante il podcast, ma la mia voce arriva in cuffia con un fottuto ritardo/Eco che mi fa balbettare e mi confonde il cervello!</h5>
+        <p><strong>Causa:</strong> Stai ascoltando la voce *dopo* che ha viaggiato nel filo lungo USB, è stata letta dal computer, impacchettata da Windows e rimandata fuori dalle casse del PC. Il viaggio di andata e ritorno crea ritardo di mezzo secondo, inevitabile senza enormi accortezze!</p>
+        <p><strong>Soluzione (Direct Monitoring):</strong> Togli le cuffie dal PC. Infila le cuffie nel buco "Cuffie" laterale DELLO ZOOM H5 STESSO! Lo Zoom H5 possiede il Direct Monitoring a "Zero Latenza". Manda cioè il segnale della tua voce direttamente al tuo orecchio (mentre un'altra copia viaggia al computer). Sentirai te stesso in tempo assoluto e non balbetterai, e il pc sentirà te lo stesso!</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 2. Nel programma (Audacity/Logic), lo Zoom H5 è riconosciuto e vedo l'onda audio formarsi, ma io ho parlato per 5 minuti usando il microfono "XY a pallina", ma quando l'ascolto sento SOLO e FORTE nell'orecchio sinistro, e non a destra. Perchè?</h5>
+        <p><strong>Causa:</strong> Sei in modalità Multitraccia. In questa modalità, l'H5 mappa fisicamente i microfoni ai canali. L'X della palla metallica è "Traccia Sinistra Fisica 1" assoluta. Non è un suono unito.</p>
+        <p><strong>Soluzione:</strong> Nel tuo programma al pc, quando premi "aggiungi traccia audio" non devi usare il formato "Stereo 1/2". Aggiungi una traccia di tipo "MONO" (Canale Singolo)! Cliccando Mono, Audacity o Logic piazzerà il suono esattamente al centro della testa facendotelo sentire su ambo le casse del pc in modo fantastico!</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 3. Quando lo collego via USB, Windows fa l'effetto sonoro di notifica (Din-Don) ma lo schermo dell'H5 resta bianco o fa linee strane, oppure non chiede il menu USB "Audio Interface" che dovrei cliccare.</h5>
+        <p><strong>Causa:</strong> Hai usato il cavo sbagliato. Il 90% dei cavi USB-Mini che abbiamo in casa (provenienti da vecchie macchinette fotografiche o caricabatterie dei cinesi) sono cavi "Solo Ricarica" a due PIN (solo per l'elettricità), privi dei PIN centrali che servono a trasferire Dati.</p>
+        <p><strong>Soluzione:</strong> Apri il cassetto magico o vai su Amazon e compra un Cavo USB "Dati / Trasferimento / Sync", e vedrai che il Menu per la magia sul registratore apparirà fulmineamente.</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<button id="themeBtn" aria-label="Cambia tema">
+  <div class="swatch"></div>
+  <span class="lbl-name">Tema</span>
+</button>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funzioni Avanzate - Zoom H5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/script.js" defer></script>
+<style>
+  .toc { background: var(--bg-card); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 1px solid var(--border); }
+  .toc h4 { margin-top: 0; color: var(--gold); }
+  .toc ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+  .toc li { margin-bottom: 8px; }
+  .toc a { color: var(--text); text-decoration: none; font-weight: 500; }
+  .toc a:hover { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<div class="global-nav">
+  <div class="global-nav-inner">
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="01-introduzione.html">🎤 Introduzione</a>
+    <a href="02-registrazione.html">🔴 Registrazione</a>
+    <a href="03-funzioni-avanzate.html" class="active">🎛️ Avanzate</a>
+    <a href="04-fotocamera.html">📷 Uso Fotocamera</a>
+    <a href="05-interfaccia-usb.html">💻 USB PC/Mac</a>
+    <a href="06-remoto.html">📱 App Remota</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <section id="avanzate" class="page-section">
+    <div class="sec-head"><span class="sec-num">03</span>
+      <div><h2>Funzioni Avanzate</h2><span class="sub">Low-Cut, Limiter, Phantom Power e Backup Salvavita</span></div>
+    </div>
+
+    <p class="lead">Un tecnico del suono non si limita ad alzare il volume. Usa l'Intelligenza del dispositivo per prevenire i disastri e tagliare i rumori molesti PRIMA che vengano incisi sul file per sempre.</p>
+
+    <div class="toc">
+      <h4>Indice del Capitolo</h4>
+      <ul>
+        <li><a href="#lowcut">1. Low-Cut Filter: Spazzare via il rumore cittadino</a></li>
+        <li><a href="#limiter">2. Compressore e Limiter: Gestire le Urla</a></li>
+        <li><a href="#phantom">3. Phantom Power (+48V): Accendere i Microfoni Professionali</a></li>
+        <li><a href="#backup">4. Backup Record (La Modalità Salvavita)</a></li>
+        <li><a href="#troubleshooting">5. Troubleshooting (Risoluzione Problemi Frequenti)</a></li>
+      </ul>
+    </div>
+
+    <h3 id="lowcut" style="margin-top:40px; color:var(--amber);">1. Low-Cut Filter: Spazzare via il rumore cittadino</h3>
+    <p>Stai registrando in una stanza o in strada. Tutto sembra perfetto, ma in cuffia senti un "Rrrrrrrrr" cupo di fondo: è il motore dell'autobus lontano, i condizionatori d'aria, il vento pesante. Frequenze basse spaventose che divorano la voce umana.</p>
+
+    <div class="card neo">
+      <span class="badge inter">Filtro Passa-Alto (Taglia Basse)</span>
+      <p class="desc">Questo filtro crea una "Forbice invisibile" elettronica che taglia i suoni gravi ancor prima che vengano registrati!</p>
+      <ul class="dots">
+        <li>Vai nel <span class="km">MENU ➔ IN/OUT ➔ LO CUT</span>. Scegli la capsula o l'ingresso e decidi la "forza" del taglio in Hertz (Hz).</li>
+        <li><strong>80 Hz:</strong> Il taglio da usare quasi sempre. Elimina i rimbombi delle scarpe sul palco, le auto lontane, e il vento leggero. La voce del relatore resterà perfetta!</li>
+        <li><strong>120 Hz o 160 Hz:</strong> Usali in condizioni di uragano o vicino ad autostrade, ma attenzione: taglieranno anche il "calore" profondo della voce umana rendendola leggermente metallica e "da telefono". Meglio che avere un audio distrutto dal vento, però!</li>
+      </ul>
+    </div>
+
+    <h3 id="limiter" style="margin-top:40px; color:var(--crimson);">2. Compressore e Limiter: Gestire le Urla</h3>
+    <p>Sei a un concerto o a un matrimonio. Il prete sussurra (e tu alzi il gain a 8), ma all'improvviso la folla esplode in un urlo di applausi e il tizio al microfono urla "AUGURIIII!". Il volume sfonderà lo Zero, distorcendo in modo letale. Come ti salvi?</p>
+
+    <div class="card amber">
+      <span class="badge pro">L'assistente di volo</span>
+      <p>Vai nel <span class="km">MENU ➔ IN/OUT ➔ COMP/LIMITER</span>. Troverai due maghi:</p>
+      <ul class="dots">
+        <li><strong>Limiter (Consigliato):</strong> È un muro di cemento armato (Duro o Morbido). Quando le urla arrivano vicinissime a 0dB e stanno per far esplodere la cassa... il Limiter entra a gamba tesa, abbassa lui il volume del registratore istantaneamente in 1 millisecondo schiacciando l'urlo, e poi rilascia il volume tornando normale non appena l'urlo finisce. È la cintura di sicurezza dell'Audio! Usalo SEMPRE nei matrimoni (Impostalo su "General" o "Concert").</li>
+        <li><strong>Compressore (Per la voce parlata):</strong> Più delicato. Se stai facendo un podcast e hai la tendenza ad allontanarti dal microfono e poi avvicinarti sbalzando coi volumi... il compressore "Schiaccia le cime alte e tira su le valli basse", livellando magicamente il tono della voce per farlo sembrare perfetto stile "Radio DJ".</li>
+      </ul>
+    </div>
+
+    <h3 id="phantom" style="margin-top:40px; color:var(--teal);">3. Phantom Power (+48V): Accendere Microfoni "Spenti"</h3>
+    <p>Compri un gigantesco microfono a fucile professionale da studio, lo colleghi col cavo Canon XLR agli ingressi inferiori 1 e 2 dello Zoom H5. Parli. Non si sente nulla. Pensi che il cavo sia rotto. NO! I microfoni professionali non hanno batterie interne, hanno bisogno di "mangiare corrente" dallo Zoom (come un vampiro) per accendersi.</p>
+
+    <div class="dd">
+      <div class="col do">
+        <h5>✅ Inviare l'energia Fantasma (+48 Volt)</h5>
+        <p>Vai nel <span class="km">MENU ➔ IN/OUT ➔ PHANTOM</span>. Seleziona +48V e premi su "ON" per gli ingressi 1 e 2 in cui hai attaccato i microfoni professionali.
+        <br>All'istante, lo Zoom spedirà corrente elettrica a 48 Volt attraverso il cavo fino a dentro la pancia del microfono, accendendolo e facendolo funzionare. 
+        <br><br><strong>Attenzione letale:</strong> MAI attivare i 48V se hai collegato ai fori inferiori strumenti come Chitarre Elettriche dirette o Sintetizzatori musicali (potresti bruciargli i circuiti!). E sappi che attivare il Phantom dimezzerà drasticamente la durata delle pile Stilo dello Zoom, perciò portati le scorte!</p>
+      </div>
+    </div>
+
+    <h3 id="backup" style="margin-top:40px; color:var(--gold);">4. Backup Record (La Modalità Salvavita Supremo)</h3>
+    <p>Nonostante tutto, hai sbagliato le regole dei capitoli precedenti. Hai messo il volume a palla, hai disattivato il Limiter, e il soggetto ha urlato. Distorsione. Il file principale è spazzatura. Inizi a piangere. Invece no... se sei un Pro!</p>
+
+    <div class="card neo">
+      <span class="badge all">Il fantasma dei -12dB</span>
+      <p class="desc">Questa è forse la funzione più incredibile dello Zoom H5 ed è disponibile <em>solo per la Capsula superiore (L/R) in formato WAV.</em></p>
+      <ul class="dots">
+        <li>Vai nel <span class="km">MENU ➔ REC ➔ BACKUP RECORD</span> e mettilo su <strong>ON</strong>.</li>
+        <li>Ora, quando premi Rec per registrare il tuo file normale (es. settato al Volume altissimo di +8)... lo Zoom in segreto scriverà in background sulla scheda SD un *SECONDO* file identico!</li>
+        <li>Ma questo file segreto avrà il volume fisso e intoccabile <strong>ribassato brutalmente di -12dB rispetto al tuo!</strong> In poche parole, mentre il tuo file si sfracella distorto sull'urlo perché lo hai regolato male, il file Backup segreto assorbirà l'urlo comodamente e con precisione cristallina. Arrivi a casa al PC, butti via la tua traccia distrutta, e usi la traccia di Backup salvando il lavoro e l'intervista! (Occupa il doppio di spazio su SD ovviamente, ma ne vale la vita).</li>
+      </ul>
+    </div>
+
+    <h3 id="troubleshooting" style="margin-top:40px; color:var(--ink);">5. Troubleshooting (Risoluzione Problemi Frequenti)</h3>
+    <div class="dd">
+      <div class="col dont">
+        <h5>❓ 1. Attivo il Compressore per un Podcast, ma quando inspiro l'aria prima di parlare, il respiro mi sembra un mantice gigante, è mostruoso!</h5>
+        <p><strong>Causa:</strong> Il Compressore alza i volumi bassissimi per farli sembrare alti come le urla. Il tuo respiro leggero è un volume basso, quindi il compressore lo prende per i capelli e lo tira a volume massimo assieme al sibilo della stanza!</p>
+        <p><strong>Soluzione:</strong> Disattiva il compressore interno dallo Zoom o abbassa il livello del suo "Ratio/Parametri" (sull'H5 i parametri non sono super customizzabili quindi opta per il settaggio "Vocal"). Il consiglio dei Pro è di non comprimere mai dentro il registratore a meno che non ci sia fretta estrema. Registra pulito e applica il compressore sul PC (con DaVinci o Audacity) usando i "Noise Gate" per abbattere i respiri prima di comprimere!</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 2. Ho acceso i +48V di Phantom Power, ma il microfono Lavalier a collarino (quelli piccoli da cravatta) ha smesso di funzionare e fa fumo!</h5>
+        <p><strong>Causa:</strong> I piccolissimi Lavalier a Jack o minijack 3.5mm che metti con l'adattatore XLR *non supportano 48 Volts*! Loro usano la "Plug-in Power" che è di soli 3 o 5 Volts. Gli hai sparato una scarica letale che ha fritto la sua microscopica pancia!</p>
+        <p><strong>Soluzione:</strong> I 48V (Phantom) si usano <em>SOLO</em> con i microfoni enormi a canna di fucile (Boom pole) o i grossi condensatori a diaframma largo. Se usi Lavalier e Jack, devi collegarli al forellino speciale laterale della capsula (EXT IN) e andare nel menu ad attivare il <strong>Plug-in Power</strong> (+5v), non il Phantom, per alimentarli dolcemente.</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 3. Ho attivato il "Backup Record", premo Play e... sulla mia scheda non c'è nessun secondo file!! La SD è mezza vuota.</h5>
+        <p><strong>Causa:</strong> Attenzione alle estensioni e ai nomi file. E al fatto che tu stia registrando in Mp3.</p>
+        <p><strong>Soluzione:</strong> Prima di tutto, la funzione Backup funziona *solo* se registri in WAV a 44.1 o 48 kHz! Se hai impostato la macchina su Mp3 o su 96kHz ad altissima risoluzione, il Backup Record è disabilitato dal processore perché brucerebbe la potenza (CPU) dell'H5! Quando funziona correttamente in WAV 48kHz, troverai un file col nome "ZOOM0001_LR.WAV" e magicamente, proprio sotto, il fantastico "ZOOM0001_BU.WAV" (BU sta per Backup!).</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<button id="themeBtn" aria-label="Cambia tema">
+  <div class="swatch"></div>
+  <span class="lbl-name">Tema</span>
+</button>
+
+</body>
+</html>

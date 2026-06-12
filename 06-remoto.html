@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Remota - Zoom H5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/script.js" defer></script>
+<style>
+  .toc { background: var(--bg-card); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 1px solid var(--border); }
+  .toc h4 { margin-top: 0; color: var(--gold); }
+  .toc ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+  .toc li { margin-bottom: 8px; }
+  .toc a { color: var(--text); text-decoration: none; font-weight: 500; }
+  .toc a:hover { color: var(--teal); }
+</style>
+</head>
+<body>
+
+<div class="global-nav">
+  <div class="global-nav-inner">
+    <a href="index.html">🏠 Dashboard</a>
+    <a href="01-introduzione.html">🎤 Introduzione</a>
+    <a href="02-registrazione.html">🔴 Registrazione</a>
+    <a href="03-funzioni-avanzate.html">🎛️ Avanzate</a>
+    <a href="04-fotocamera.html">📷 Uso Fotocamera</a>
+    <a href="05-interfaccia-usb.html">💻 USB PC/Mac</a>
+    <a href="06-remoto.html" class="active">📱 App Remota</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <section id="remoto" class="page-section">
+    <div class="sec-head"><span class="sec-num">06</span>
+      <div><h2>Controllo Remoto (App e Bluetooth)</h2><span class="sub">Lo Scenario del Tecnico Audio: Comandare a Distanza</span></div>
+    </div>
+
+    <p class="lead">Non devi sempre restare appiccicato allo strumento col fiato sospeso mentre c'è una conferenza. Immagina di poggiare lo Zoom H5 sul banco dei relatori lontanissimo dal pubblico, andarti a sedere comodamente in ultima fila in platea e continuare a gestire l'audio e salvare il file usando il tuo iPhone. Ora puoi.</p>
+
+    <div class="toc">
+      <h4>Indice del Capitolo</h4>
+      <ul>
+        <li><a href="#bta1">1. L'Hardware: Il chip Bluetooth (Zoom BTA-1)</a></li>
+        <li><a href="#pairing">2. Inserimento e Connessione (Pairing) del Telefono</a></li>
+        <li><a href="#utilizzo">3. Uso sul Palco: Come comandare lo Zoom a 10 metri (Gain Remoto)</a></li>
+        <li><a href="#marker">4. Uso intelligente dei "MARKER" (Segnalibri Segreti)</a></li>
+        <li><a href="#troubleshooting">5. Troubleshooting (Risoluzione Problemi Frequenti)</a></li>
+      </ul>
+    </div>
+
+    <h3 id="bta1" style="margin-top:40px; color:var(--amber);">1. L'Hardware: Il chip Bluetooth (BTA-1)</h3>
+    <p>A differenza dei dispositivi moderni o degli smartwatch, l'H5 è un carro armato professionale e per ridurre interferenze interne <strong>non contiene antenne Wi-Fi/Bluetooth nella scocca standard</strong>.</p>
+    
+    <div class="card neo">
+      <span class="badge inter">Il pezzo Mancante</span>
+      <p class="desc">Per usare il controllo remoto, devi fisicamente inserire nello Zoom H5 il pezzetto originale venduto a parte chiamato <strong>"Adattatore Zoom BTA-1"</strong>.</p>
+      <ul class="dots">
+        <li>È una minuscola pennetta bluetooth grande come un'unghia. </li>
+        <li><strong>Attenzione estrema:</strong> Non inserire o togliere il chip BTA-1 mentre lo Zoom H5 è acceso, perché rischieresti di causare un corto circuito elettronico e bruciare i contatti interni! Assicurati sempre che il registratore sia spento.</li>
+      </ul>
+    </div>
+
+    <h3 id="pairing" style="margin-top:40px; color:var(--teal);">2. Inserimento e Connessione (Pairing) del Telefono</h3>
+    <p>Ora sincronizziamo la mente dello smartphone a quella dello Zoom.</p>
+
+    <div class="dd">
+      <div class="col do">
+        <h5>✅ Procedura Chirurgica</h5>
+        <ol class="steps">
+          <li>A dispositivo spento, infila l'adattatore BTA-1 nello slot dell'H5 finché scatta in posizione. Accendi l'H5.</li>
+          <li>Premi il tasto laterale MENU e naviga fino a trovare l'icona e il menu <strong>"Bluetooth"</strong> (o dentro System). Seleziona <strong>ON / Connect</strong> per accendere "l'antenna" e inviare il segnale per l'aria nella stanza.</li>
+          <li>Sul tuo cellulare scarica l'app ufficiale <strong>ZOOM Handy Control & Sync</strong>. <em>(Usa questo nome, non scaricare l'app delle videocall Zoom!).</em> Assicurati che il Bluetooth del tuo telefono sia acceso (se sei su iPhone dagli i permessi necessari).</li>
+          <li>Apri l'app. Sullo schermo apparirà una lista dispositivi col nome "H5 Studio". Toccalo con il dito. Fatto! Il monitor dello smartphone clonerà il piccolo schermo nero e bianco dello Zoom!</li>
+        </ol>
+      </div>
+    </div>
+
+    <h3 id="utilizzo" style="margin-top:40px; color:var(--crimson);">3. Uso sul Palco: Comandare a 10 metri (Gain Remoto)</h3>
+    <p>Hai lasciato lo Zoom H5 da solo in prima fila, acceso, sul podio del Prete o del Sindaco. Tu sei seduto in terza fila (Distanza massima coperta dal Bluetooth: circa 10 metri a vista, occhio ai muri e ai pilastri in cemento).</p>
+
+    <div class="card amber">
+      <span class="badge pro">La Gestione Dinamica</span>
+      <p class="desc">Toccando semplicemente lo schermo del telefono vedrai il misuratore audio (le barre verdi/rosse). E farai questo:</p>
+      <ul class="dots">
+        <li>Il relatore inizia a parlare piano, troppo piano. Niente panico! Scivola il dito sulla rotella grafica (Gain/Sensibilità) disegnata nell'app verso l'alto per "alzare il volume" della macchina fisica che si trova a 10 metri di distanza!</li>
+        <li>Premi il grande tasto rosso rotondo "REC" per iniziare la registrazione o "Stop" per terminarla senza dover camminare fino al palco in modo imbarazzante per interromperlo.</li>
+      </ul>
+    </div>
+
+    <h3 id="marker" style="margin-top:40px; color:var(--gold);">4. Uso intelligente dei "MARKER" (Segnalibri Segreti)</h3>
+    <p>Le conferenze universitarie o le giunte comunali possono durare anche 4 o 5 ore, producendo un file WAV colossale e ininterrotto.</p>
+
+    <div class="card neo">
+      <span class="badge all">Tagliare la noia</span>
+      <ul class="dots">
+        <li>Sull'app del telefono (o fisicamente sul registratore, se sei vicino) c'è un tastino utilissimo, di solito con il simbolo di una <strong>Bandierina</strong> o la scritta <strong>MARK</strong> (Marker).</li>
+        <li>Stai registrando in diretta da 2 ore e l'audio è noioso. A un certo punto (Ore 2:15), il relatore esplode e dice: <em>"Signori, ho una notizia bomba che cambierà tutto!"</em>. Quello è il fulcro vitale! Il pezzo clou del Podcast che andrà su TikTok!</li>
+        <li>In quel preciso istante premi di corsa "MARK" sul telefono! Non si sente nulla, ma elettronicamente hai appena "iniettato" nel file WAV un segnale fantasma. </li>
+        <li>Arrivi a casa, apri il file infinito su Premiere o Audacity... e invece di dover ascoltare tutte le 2 ore di fuffa per ritrovare quel passaggio d'oro, vedrai una bellissima Linea Colorata / Bandierina piantata proprio nel momento di "Ehi ho una notizia bomba!". Cliccherai lì e taglierai il video in un attimo, risparmiando ore intere di noia. (I Marker sono usati <em>Sempre</em> dai professionisti dell'audio/video).</li>
+      </ul>
+    </div>
+
+    <h3 id="troubleshooting" style="margin-top:40px; color:var(--ink);">5. Troubleshooting (Risoluzione Problemi Frequenti)</h3>
+    <div class="dd">
+      <div class="col dont">
+        <h5>❓ 1. Ho fatto tutto giusto, l'app "vede" lo Zoom H5, lo clicco per connettermi ma gira la rotellina all'infinito e la connessione (Pairing) fallisce sempre!</h5>
+        <p><strong>Causa:</strong> Errore del 99% degli utenti. Stanno cercando di accoppiare lo Zoom dalle impostazioni Bluetooth "di sistema" del Telefono (Andando in Impostazioni iOS > Bluetooth e cliccando il dispositivo).</p>
+        <p><strong>Soluzione:</strong> Le app speciali come quelle di Zoom, DJI o Gimbal lavorano con protocolli a bassa latenza che vengono "rifiutati" dalla gestione di default. Tu DEVI cancellare (dimenticare) il dispositivo dalla lista del bluetooth del tuo smartphone. Poi devi APRIRE L'APP "Zoom Handy" e usare unicamente la schermata interna che trovi dentro all'app per fare la connessione Bluetooth. È l'app stessa a negoziare le chiavi di sicurezza, non il menu del tuo telefono!</p>
+      </div>
+      <div class="col dont">
+        <h5>❓ 2. Sono in chiesa col BTA-1 a 5 metri, l'app è collegata, ma il segnale verde "salta" in continuazione, i numeretti (timecode) si bloccano per un secondo per poi rincorrersi velocemente, il telefono balbetta graficamente. Che orrore, sta rovinando la registrazione?!</h5>
+        <p><strong>Causa:</strong> No! La registrazione fisica che lo Zoom H5 sta facendo sulla sua schedina SD "pancia a terra" non c'entra niente col bluetooth ed è salva e perfetta! Ciò che scatta in ritardo è la pura visualizzazione dei dati inviata per l'aria all'app in mezzo a una stanza affollata da 100 corpi di pelle viva composti al 70% di acqua (l'acqua distrugge i segnali radio!) colmi di smarphone in tasca che emettono campi elettromagnetici che sballano il tuo protocollo 2.4Ghz.</p>
+        <p><strong>Soluzione:</strong> Tieni il telefono più sollevato possibile. Allontanati un po' dalle mura in cemento armato storiche piene di ferri (funzionano da gabbia di Faraday isolante). Oppure mettiti l'anima in pace: ignora lo scatto grafico del display remoto dell'App e continua ad ascoltare fiducioso a orecchio.</p>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<button id="themeBtn" aria-label="Cambia tema">
+  <div class="swatch"></div>
+  <span class="lbl-name">Tema</span>
+</button>
+
+</body>
+</html>
